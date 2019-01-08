@@ -1,7 +1,7 @@
-__author__ = 'JunSong<songjun@corp.netease.com>'
+__author__ = 'JunSong<songjun54cm@gmail.com>'
 # Date: 2019/1/7
 import argparse
-from data_provider.NormalDataProvider import NormalDataProvider
+from ml_idiot.data_provider.NormalDataProvider import NormalDataProvider
 
 
 class LgbmGbdtDataProvider(NormalDataProvider):

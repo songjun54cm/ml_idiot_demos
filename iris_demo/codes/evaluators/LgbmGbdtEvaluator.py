@@ -1,4 +1,4 @@
-__author__ = 'JunSong<songjun@corp.netease.com>'
+__author__ = 'JunSong<songjun54cm@gmail.com>'
 # Date: 2019/1/8
 import argparse
 from ml_idiot.evaluator.BinaryClassifyEvaluator import BinaryClassifyEvaluator

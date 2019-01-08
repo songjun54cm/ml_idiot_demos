@@ -2,8 +2,8 @@ __author__ = 'JunSong<songjun54cm@gmail.com>'
 import argparse
 import importlib
 import logging
-from solver.BasicSolver import BasicSolver as Solver
-from demos.iris_demo.codes.settings import PROJECT_HOME
+from ml_idiot.solver.BasicSolver import BasicSolver as Solver
+from settings import PROJECT_HOME
 
 
 logging.basicConfig(
