@@ -38,4 +38,7 @@ datas = {
     'test_labels': test_labels
 }
 data_dump(datas, save_data_dir)
+import _pickle as pkl
+with open(os.path.join(save_data_dir, "mnist.pkl"), "wb") as f:
+    pkl.dump(datas, f)
 
