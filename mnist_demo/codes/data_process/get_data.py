@@ -1,20 +1,23 @@
 __author__ = 'JunSong<songjun54cm@gmail.com>'
 from tensorflow.examples.tutorials.mnist import input_data
+# pip install python-mnist
+from mnist import MNIST
 from ml_idiot.utils.save_load import data_dump
 import os
-from settings import DATA_HOME
+DATA_HOME = "../../data/"
 
 
 data_folder = os.path.join(DATA_HOME, 'mnist')
 save_data_dir = os.path.join(data_folder, "mnist_data")
-os.makedirs(save_data_dir)
+if not os.path.exists(save_data_dir):
+    os.makedirs(save_data_dir)
 
 # Get the sets of images and labels for training, validation, and
 # test on MNIST.
 data_sets = input_data.read_data_sets(data_folder)
 
 import numpy as np
-from mnist import MNIST
+
 mndata = MNIST(data_folder)
 train_images, train_labels = mndata.load_training()
 test_images, test_labels = mndata.load_testing()
