@@ -1,0 +1,13 @@
+*.asv
+*.mat
+*.pyc
+*.txt
+*.iml
+!*result.txt
+~*
+*.pkl
+*.data
+*.lock
+data/*
+.idea/*
+.idea/
