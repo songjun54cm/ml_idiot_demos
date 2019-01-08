@@ -6,8 +6,8 @@ config = {
     'model_config': {
         "num_leaves": 20,
         "num_trees": 100,
-        "objective": "binary",
-        "metric": ["auc", "binary_logloss"],
+        "objective": "multiclass",
+        "metric": ["multi_error", "multi_logloss"],
         "num_round": 10
     },
 }
